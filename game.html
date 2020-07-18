@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>学习使用Vue</title>
+</head>
+
+<body>
+    <div id="app">
+        <h1 v-bind:style="{visibility: hid}">{{text}}</h1>
+        <h2>{{time_text}}</h2>
+        <button @click='ccc' v-bind:style="{left: l+'%', top: t+'%'}"></button>
+    </div>
+</body>
+<style>
+    button {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        background-color: #818181;
+        border: none;
+        transition-duration: 0.2s;
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    button:hover {
+        background-color: #00fff2;
+        box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    }
+</style>
+<script>
+    function myTimer() {
+        if (app.remain <= 0) {
+            clearInterval(app.myVar)
+            alert("时间到！刷新页面重新开始游戏")
+
+        }
+        else {
+            app.remain -= 1
+            app.time_text = "您还有 " + app.remain / 10 + " 秒，请尽量可能多地点击按钮"
+        }
+
+    }
+
+
+    let app = new Vue({
+        el: " #app",
+        data: {
+            total: 0,
+            hid: "",
+            text: "页面中间是一个按钮，请尝试点它一下",
+            remain: 300,
+            time_text: "",
+            l: Math.round(0.5 * (100 - (5000 / document.documentElement.clientWidth))),
+            t: Math.round(0.5 * (100 - (5000 / document.documentElement.clientHeight))),
+            myVar: ""
+        },
+        methods: {
+            ccc() {
+                // this.hid = "hidden"
+                if (this.remain === 0) {
+                    alert("再点也没用了")
+                    return
+                }
+                this.total++
+                this.text = "已经点击了 " + this.total + " 次"
+                this.l = Math.round(Math.random() * (100 - (5000 / document.documentElement.clientWidth)))
+                this.t = Math.round(Math.random() * (100 - (5000 / document.documentElement.clientHeight)))
+                if (this.total === 1)
+                    this.myVar = setInterval(function () { myTimer() }, 100);
+            }
+
+        }
+    }) </script>
+
+
+</html>
