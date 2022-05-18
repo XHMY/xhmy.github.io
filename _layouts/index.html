@@ -5,19 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="favicon.ico" />
+    <meta name="description" content="{{site.description}}">
+    <meta name="title" content="{{site.title}}">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-
-{% seo %}
     <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
-    <!--[if lt IE 9]>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
-    <![endif]-->
-    {% include head-custom.html %}
   </head>
   <body>
     <div class="wrapper">
       <header>
-        <h1>Yifan Zeng</h1>
+        <h1>Yifan Zeng | 曾一凡</h1>
 
         {% if site.logo %}
           <img src="{{site.logo | relative_url}}" alt="Logo" />
@@ -50,10 +46,24 @@
           
         </ul>
       </header>
+      <section class="shadow-sm p-3 mb-5 bg-body rounded fs-5">
+        I am an undergraduate student study <strong>Data Science and Big Data Technology</strong> at <i>Zhuhai College of Jilin University</i> since 2019.
+        <br>
+        I was interested in programming when I was young. I stepped into the deep learning area in 2020.
+      </section>
       <section>
-
-      {{ content }}
-
+        <h1>Education</h1>
+        <h5>B.S. Zhuhai College of Jilin University 2019-2023</h5>
+        <div class="card">
+          <div class="card-body">
+            <h6 class="card-title">Cumulative GPA</h6>
+            <p class="card-text text-primary fw-bold">3.81/4.0 (Top 1 in the department)</p>
+          </div>
+        </div>
+        
+      </section>
+      <section>
+        {{ content }}
       </section>
       <footer>
         {% if site.github.is_project_page %}
