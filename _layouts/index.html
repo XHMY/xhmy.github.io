@@ -97,7 +97,10 @@
       html: true,
       trigger: 'hover',
       placement: 'right',
-      content: function () { return '<img src="' + $(this).data('img') + '"  class="img-fluid"/>'; }
+      content: function () { 
+        console.log($(this));
+        return '<img src="assets/img/WeChat.JPG"  class="img-fluid"/>'; 
+      }
     }))
   </script>
 </html>
