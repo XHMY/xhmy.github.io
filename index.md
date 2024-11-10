@@ -137,7 +137,7 @@ I received my B.Eng. in Data Science at Zhuhai College of Jilin University in 20
 </div>
 
 ✧ Equal Contribution / Leading Contributors <br>
-The above papers are sorted by the date I completed the first version.
+The papers listed are sorted by the completion date.
 
 ## Misc.
 
