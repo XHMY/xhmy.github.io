@@ -37,7 +37,7 @@ I received my B.Eng. in Data Science at Zhuhai College of Jilin University in 20
             Hui Yuan✧, <span class="highlighted-author">Yifan Zeng</span>✧, Yue Wu✧, Huazheng Wang, Mengdi Wang, Liu Leqi✧
         </div>
         <div class="publication-info">
-            <span class="publication-venue">arXiv preprint</span>
+            <span class="publication-venue">ICLR 2025</span>
             <span class="publication-separator">•</span>
             <span class="publication-date">arXiv:2410.13828</span>
         </div>
@@ -51,7 +51,7 @@ I received my B.Eng. in Data Science at Zhuhai College of Jilin University in 20
             <span class="highlighted-author">Yifan Zeng</span>✧, Ojas Tendolkar✧, Raymond Baartmans✧, Qingyun Wu, Huazheng Wang, Lizhong Chen
         </div>
         <div class="publication-info">
-            <span class="publication-venue">arXiv preprint</span>
+            <span class="publication-venue">NeurIPS 2024 Workshop SFLLM</span>
             <span class="publication-separator">•</span>
             <span class="publication-date">arXiv:2406.00231</span>
         </div>
@@ -65,7 +65,7 @@ I received my B.Eng. in Data Science at Zhuhai College of Jilin University in 20
             <span class="highlighted-author">Yifan Zeng</span>✧, Yiran Wu✧, Xiao Zhang, Huazheng Wang, Qingyun Wu
         </div>
         <div class="publication-info">
-            <span class="publication-venue">arXiv preprint</span>
+            <span class="publication-venue">NeurIPS 2024 Workshop SafeGenAi</span>
             <span class="publication-separator">•</span>
             <span class="publication-date">arXiv:2403.04783</span>
         </div>
