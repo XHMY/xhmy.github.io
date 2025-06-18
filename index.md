@@ -18,6 +18,34 @@ I received my B.Eng. in Data Science at Zhuhai College of Jilin University in 20
 
 <div class="publications-container">
     <div class="publication-item">
+        <h3 class="publication-title">SimpleDoc: Multi-Modal Document Understanding with Dual-Cue Page Retrieval and Iterative Refinement</h3>
+        <div class="publication-authors">
+            Chelsi Jain✧, Yiran Wu✧, <span class="highlighted-author">Yifan Zeng</span>✧, Jiale Liu, Shengyu Dai, Zhenwen Shao, Qingyun Wu, Huazheng Wang
+        </div>
+        <div class="publication-info">
+            <span class="publication-venue">arXiv preprint</span>
+            <span class="publication-separator">•</span>
+            <span class="publication-date">arXiv:2506.14035</span>
+        </div>
+    </div>
+</div>
+
+<div class="publications-container">
+    <div class="publication-item">
+        <h3 class="publication-title">Divide, Optimize, Merge: Fine-Grained LLM Agent Optimization at Scale</h3>
+        <div class="publication-authors">
+            Jiale Liu, <span class="highlighted-author">Yifan Zeng</span>, Yifan Zeng, Shaokun Zhang, Chi Zhang, Malte Højmark-Bertelsen, Marie Normann Gadeberg, Huazheng Wang, Qingyun Wu
+        </div>
+        <div class="publication-info">
+            <span class="publication-venue">arXiv preprint</span>
+            <span class="publication-separator">•</span>
+            <span class="publication-date">arXiv:2505.03973</span>
+        </div>
+    </div>
+</div>
+
+<div class="publications-container">
+    <div class="publication-item">
         <h3 class="publication-title">TreeBoN: Enhancing Inference-Time Alignment with Speculative Tree-Search and Best-of-N Sampling</h3>
         <div class="publication-authors">
             Jiahao Qiu✧, Yifu Lu✧, <span class="highlighted-author">Yifan Zeng</span>, Jiacheng Guo, Jiayi Geng, Huazheng Wang, Kaixuan Huang, Yue Wu, Mengdi Wang
