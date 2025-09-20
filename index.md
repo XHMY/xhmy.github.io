@@ -2,14 +2,14 @@
 layout: default
 ---
 
-Hi! I'm Yifan Zeng and my name in Chinese is 曾一凡 . I'm currently a second-year Computer Science Ph.D. student at **Oregon State University**, where I'm fortunate to be advised by [Huazheng Wang](https://huazhengwang.github.io/).
+Hi! I'm Yifan Zeng and my name in Chinese is 曾一凡 . I'm currently a third-year Computer Science Ph.D. student at **Oregon State University**, where I'm fortunate to be advised by [Huazheng Wang](https://huazhengwang.github.io/).
 
 My research focuses on the robust planning and decision-making of **large language models (LLMs)**.
-I'm passionate about developing **Agentic AI** through multi-agent systems, reinforcement learning, and preference optimization.
+I'm passionate about developing **Agentic AI** through reinforcement learning and multi-agent systems.
 
-Before joining OSU, I worked as a *Research Scientist* at a technology startup, where I carried out AI solutions in the real-world using **deep learning and computer vision**.
+Before joining OSU, I worked as a *Research Scientist* at a technology startup, where I carried out AI solutions using **deep learning and computer vision**.
 My previous research spans object detection, medical image analysis, representation learning, and AI4Science.
-I received my B.Eng. in Data Science at Zhuhai College of Jilin University in 2023, , ranking first in my department with a 3.84/4.0 GPA.
+I received my B.Eng. in Data Science at Zhuhai College of Jilin University in 2023, ranking first in my department with a 3.84/4.0 GPA.
 
 <!-- ## News and Updates -->
 
