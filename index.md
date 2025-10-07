@@ -18,12 +18,26 @@ I received my B.Eng. in Data Science at Zhuhai College of Jilin University in 20
 
 <div class="publications-container">
     <div class="publication-item">
+        <h3 class="publication-title">The Ranking Blind Spot: Decision Hijacking in LLM-based Text Ranking</h3>
+        <div class="publication-authors">
+            Yaoyao Qian✧, <span class="highlighted-author">Yifan Zeng/span>✧, Yuchao Jiang, Chelsi Jain, Huazheng Wang
+        </div>
+        <div class="publication-info">
+            <span class="publication-venue">EMNLP 2025</span>
+            <span class="publication-separator">•</span>
+            <span class="publication-date">arXiv:2509.18575</span>
+        </div>
+    </div>
+</div>
+
+<div class="publications-container">
+    <div class="publication-item">
         <h3 class="publication-title">SimpleDoc: Multi-Modal Document Understanding with Dual-Cue Page Retrieval and Iterative Refinement</h3>
         <div class="publication-authors">
             Chelsi Jain✧, Yiran Wu✧, <span class="highlighted-author">Yifan Zeng</span>✧, Jiale Liu, Shengyu Dai, Zhenwen Shao, Qingyun Wu, Huazheng Wang
         </div>
         <div class="publication-info">
-            <span class="publication-venue">arXiv preprint</span>
+            <span class="publication-venue">EMNLP 2025</span>
             <span class="publication-separator">•</span>
             <span class="publication-date">arXiv:2506.14035</span>
         </div>
@@ -37,7 +51,7 @@ I received my B.Eng. in Data Science at Zhuhai College of Jilin University in 20
             Jiale Liu, <span class="highlighted-author">Yifan Zeng</span>, Yifan Zeng, Shaokun Zhang, Chi Zhang, Malte Højmark-Bertelsen, Marie Normann Gadeberg, Huazheng Wang, Qingyun Wu
         </div>
         <div class="publication-info">
-            <span class="publication-venue">arXiv preprint</span>
+            <span class="publication-venue">EMNLP 2025</span>
             <span class="publication-separator">•</span>
             <span class="publication-date">arXiv:2505.03973</span>
         </div>
@@ -51,7 +65,7 @@ I received my B.Eng. in Data Science at Zhuhai College of Jilin University in 20
             Jiahao Qiu✧, Yifu Lu✧, <span class="highlighted-author">Yifan Zeng</span>, Jiacheng Guo, Jiayi Geng, Huazheng Wang, Kaixuan Huang, Yue Wu, Mengdi Wang
         </div>
         <div class="publication-info">
-            <span class="publication-venue">arXiv preprint</span>
+            <span class="publication-venue">EMNLP 2025</span>
             <span class="publication-separator">•</span>
             <span class="publication-date">arXiv:2410.16033</span>
         </div>
