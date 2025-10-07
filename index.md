@@ -20,7 +20,7 @@ I received my B.Eng. in Data Science at Zhuhai College of Jilin University in 20
     <div class="publication-item">
         <h3 class="publication-title">The Ranking Blind Spot: Decision Hijacking in LLM-based Text Ranking</h3>
         <div class="publication-authors">
-            Yaoyao Qian✧, <span class="highlighted-author">Yifan Zeng/span>✧, Yuchao Jiang, Chelsi Jain, Huazheng Wang
+            Yaoyao Qian✧, <span class="highlighted-author">Yifan Zeng</span>✧, Yuchao Jiang, Chelsi Jain, Huazheng Wang
         </div>
         <div class="publication-info">
             <span class="publication-venue">EMNLP 2025</span>
