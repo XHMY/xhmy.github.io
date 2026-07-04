@@ -66,7 +66,7 @@
 - URL: https://aclanthology.org/2025.emnlp-main.1443/
 
 ## Divide, Optimize, Merge: Fine-Grained LLM Agent Optimization at Scale
-- Authors: Jiale Liu, **Yifan Zeng**, Yifan Zeng, Shaokun Zhang, Chi Zhang, Malte Højmark-Bertelsen, Marie Normann Gadeberg, Huazheng Wang, Qingyun Wu
+- Authors: Jiale Liu, **Yifan Zeng**, Shaokun Zhang, Chi Zhang, Malte Højmark-Bertelsen, Marie Normann Gadeberg, Huazheng Wang, Qingyun Wu
 - Venue: EMNLP 2025
 - Info: arXiv:2505.03973
 - Year: 2025
