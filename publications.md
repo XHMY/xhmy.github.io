@@ -39,6 +39,12 @@
 =============================================================================
 -->
 
+## Who&When Pro: Can LLMs Really Attribute Failures in AI Agents?
+- Authors: Jiale Liu, Huajun Xi, Shaokun Zhang, **Yifan Zeng**, Tianwei Yue, Chi Wang, Jian Kang, Qingyun Wu, Huazheng Wang
+- Venue: NeurIPS 2026
+- Info: arXiv:2607.09996
+- Year: 2026
+
 ## When Does Multi-Agent RL Improve LLM Workflows? Workflow, Scale, and Policy-Sharing Tradeoffs
 - Authors: **Yifan Zeng**, Yiran Wu, Yaolun Zhang, Wentian Zhao, Kun Wan, Qingyun Wu, Huazheng Wang
 - Venue: Preprint
