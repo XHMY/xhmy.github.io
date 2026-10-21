@@ -2,7 +2,7 @@
 layout: default
 ---
 
-Hi! I'm Yifan Zeng and my name in Chinese is 曾一凡 . I'm currently a third-year Computer Science Ph.D. student at **Oregon State University**, where I'm fortunate to be advised by [Huazheng Wang](https://huazhengwang.github.io/).
+Hi! I'm Yifan Zeng and my name in Chinese is 曾一凡 . I'm currently a fourth-year Computer Science Ph.D. student at **Oregon State University**, where I'm fortunate to be advised by [Huazheng Wang](https://huazhengwang.github.io/).
 
 My research focuses on the robust planning and decision-making of **large language models (LLMs)**.
 I'm passionate about developing **Agentic AI** through reinforcement learning and multi-agent systems.
