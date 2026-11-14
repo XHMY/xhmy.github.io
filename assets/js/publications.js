@@ -295,13 +295,16 @@
     var selected = main.filter(function (e) { return e.selected; });
     var hasSelected = selected.length > 0;
 
+    var earlierOpen = false;
     function draw(view) {
+      var prev = container.querySelector(".pub-earlier");
+      if (prev) earlierOpen = prev.open;
       var html = "";
       if (hasSelected) {
         html +=
           '<div class="pub-filter" role="group" aria-label="Publication view">' +
           '<button type="button" data-view="selected" aria-pressed="' + (view === "selected") + '">Selected (' + selected.length + ")</button>" +
-          '<button type="button" data-view="all" aria-pressed="' + (view === "all") + '">All (' + entries.length + ")</button>" +
+          '<button type="button" data-view="all" aria-pressed="' + (view === "all") + '">All (' + main.length + ")</button>" +
           "</div>";
       }
       if (view === "selected") {
@@ -310,7 +313,7 @@
         html += renderTimeline(main, true);
         if (earlier.length) {
           html +=
-            '<details class="pub-earlier"><summary>Earlier work: computer vision &amp; AI4Science (' +
+            '<details class="pub-earlier"' + (earlierOpen ? " open" : "") + '><summary>Earlier work: computer vision &amp; AI4Science (' +
             earlier.length + ")</summary>" + renderTimeline(earlier) + "</details>";
         }
       }
