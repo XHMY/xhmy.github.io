@@ -29,6 +29,11 @@
               automatically (arXiv:2509.18575 -> https://arxiv.org/abs/2509.18575).
               Set URL for non-arXiv papers, e.g.  URL: https://doi.org/10.1111/jocd.15742
 
+   - Selected: (optional) "yes" puts the paper in the default "Selected" view
+              and gives it a "Selected" badge. Visitors can switch to "All".
+   - Section: (optional) "earlier" moves the paper out of the main timeline
+              into the collapsed "Earlier work" block at the end (All view).
+
  Papers are GROUPED INTO A TIMELINE BY YEAR (newest year first), using the
  Year field above. Within a year they appear in the order written here. So you
  only need to keep papers of the same year in your preferred order; the years
@@ -44,12 +49,14 @@
 - Venue: NeurIPS 2026
 - Info: arXiv:2607.09996
 - Year: 2026
+- Selected: yes
 
 ## When Does Multi-Agent RL Improve LLM Workflows? Workflow, Scale, and Policy-Sharing Tradeoffs
 - Authors: **Yifan Zeng**, Yiran Wu, Yaolun Zhang, Wentian Zhao, Kun Wan, Qingyun Wu, Huazheng Wang
 - Venue: Preprint
 - Info: arXiv:2605.24202
 - Year: 2026
+- Selected: yes
 
 ## Enabling Unstructured Sparse Fine-Tuning and Inference for Foundation Models on Wafer-Scale Engine
 - Authors: Haoyu Zheng, **Yifan Zeng**, Linghao Song, Murali Emani, Wenqian Dong
@@ -70,6 +77,8 @@
 - Info: arXiv:2506.14035
 - Year: 2025
 - URL: https://aclanthology.org/2025.emnlp-main.1443/
+- Selected: yes
+- Links: [Code](https://github.com/ag2ai/SimpleDoc)
 
 ## Divide, Optimize, Merge: Fine-Grained LLM Agent Optimization at Scale
 - Authors: Jiale Liu, **Yifan Zeng**, Shaokun Zhang, Chi Zhang, Malte Højmark-Bertelsen, Marie Normann Gadeberg, Huazheng Wang, Qingyun Wu
@@ -91,6 +100,7 @@
 - Info: arXiv:2410.13828
 - Year: 2024
 - URL: https://openreview.net/forum?id=YaBiGjuDiC
+- Selected: yes
 
 ## The Ranking Blind Spot: Decision Hijacking in LLM-based Text Ranking
 - Authors: Yaoyao Qian✧, **Yifan Zeng**✧, Yuchao Jiang, Chelsi Jain, Huazheng Wang
@@ -98,6 +108,8 @@
 - Info: arXiv:2509.18575
 - Year: 2024
 - URL: https://aclanthology.org/2025.emnlp-main.1116/
+- Selected: yes
+- Links: [Code](https://github.com/blindspotorg/RankingBlindSpot)
 
 ## LLM-RankFusion: Mitigating Intrinsic Inconsistency in LLM-based Ranking
 - Authors: **Yifan Zeng**✧, Ojas Tendolkar✧, Raymond Baartmans✧, Qingyun Wu, Huazheng Wang, Lizhong Chen
@@ -105,12 +117,16 @@
 - Info: arXiv:2406.00231
 - Year: 2024
 - URL: https://openreview.net/forum?id=VUY0j74Yes
+- Selected: yes
+- Links: [Code](https://github.com/XHMY/LLM-RankFusion)
 
 ## AutoDefense: Multi-Agent LLM Defense against Jailbreak Attacks
 - Authors: **Yifan Zeng**✧, Yiran Wu✧, Xiao Zhang, Huazheng Wang, Qingyun Wu
 - Venue: NeurIPS 2024 Workshop @ SafeGenAi
 - Info: arXiv:2403.04783
 - Year: 2024
+- Selected: yes
+- Links: [Code](https://github.com/XHMY/AutoDefense)
 
 ## Modeling the Time Evolution of Compact Binary Systems with Machine Learning
 - Authors: Jianqi Yan✧, Junjie Luo✧, **Yifan Zeng**, Alex P Leung, Jie Feng, Hong-Hao Zhang, Weipeng Lin
@@ -118,6 +134,7 @@
 - Info: 973 (2), 163 | 2024-09
 - Year: 2023
 - URL: https://doi.org/10.3847/1538-4357/ad6989
+- Section: earlier
 
 ## Tropical cyclone ensemble forecast framework based on spatiotemporal model
 - Authors: Tongfei Li, Kaihua Che, Jiadong Lu, **Yifan Zeng**, Wei Lv, Zhiyao Liang
@@ -125,6 +142,7 @@
 - Info: 17, 4791-4807 | 2024-07
 - Year: 2023
 - URL: https://doi.org/10.1007/s12145-024-01418-z
+- Section: earlier
 
 ## Enhanced object detection in pediatric bronchoscopy images using YOLO-based algorithms with CBAM attention mechanism
 - Authors: Jianqi Yan, **Yifan Zeng**, Junhong Lin, Zhiyuan Pei, Jinrui Fan, Chuanyu Fang, Yong Cai
@@ -132,6 +150,7 @@
 - Info: 10 (12) | 2024-06
 - Year: 2022
 - URL: https://doi.org/10.1016/j.heliyon.2024.e32678
+- Section: earlier
 
 ## Task-Level Consistency Semi-supervised Based Domain Adaptation for Lung Nodules Segmentation
 - Authors: **Yifan Zeng**, Aohui Pang, Wei Lv, Xiaolin Zhu
@@ -139,6 +158,7 @@
 - Info: 181-196 | 2022-11
 - Year: 2022
 - URL: https://doi.org/10.1007/978-3-031-12127-2_13
+- Section: earlier
 
 ## A challenge of deep‐learning‐based object detection for hair follicle dataset
 - Authors: Wei Lv, Tao Chen, **Yifan Zeng**, Weihong Liu, Chuying Huang
@@ -146,3 +166,4 @@
 - Info: 22 (9), 2565-2578 | 2023-09
 - Year: 2021
 - URL: https://doi.org/10.1111/jocd.15742
+- Section: earlier

@@ -12,7 +12,7 @@
    avatar) and polishes everything around it: a derived blue token system,
    stronger type rhythm, blue-accented section headings, modern soft
    publication cards with a left accent stripe + venue pill, a refined sidebar
-   with an avatar halo and a "My CV" button, and a framed GitHub chart.
+   with an avatar halo and a "CV / Resume" button, and a framed GitHub chart.
 
    Loaded AFTER `@import "jekyll-theme-minimal"`, so these rules override the
    base theme. Publications are rendered client-side (assets/js/publications.js)
@@ -238,11 +238,11 @@ header hr {
     font-weight: 400;       /* cancel base theme bold => no reflow */
 }
 
-/* "My CV" reads as a subtle button — it is the final contact row */
-.contact-item:last-child {
-    margin-top: 0.55rem;
+/* "CV / Resume" reads as a subtle button, placed right under the tagline */
+.contact-item.cv-button {
+    margin: 0.2rem 0 0.9rem;
 }
-.contact-item:last-child a {
+.contact-item.cv-button a {
     display: inline-flex;
     align-items: center;
     padding: 0.4rem 0.95rem 0.4rem 0.8rem;
@@ -256,8 +256,8 @@ header hr {
     transition: background 0.18s ease, border-color 0.18s ease,
                 color 0.18s ease, box-shadow 0.18s ease, transform 0.18s ease;
 }
-.contact-item:last-child a:hover,
-.contact-item:last-child a:focus {
+.contact-item.cv-button a:hover,
+.contact-item.cv-button a:focus {
     background: var(--accent-strong);   /* AA: white-on-#1f6699 ~6:1 */
     border-color: var(--accent-strong);
     color: #fff;
@@ -647,7 +647,7 @@ section img[src*="ghchart"] {
         font-size: 1.0rem;
     }
 
-    .contact-item:last-child a {
+    .contact-item.cv-button a {
         padding: 0.42rem 0.9rem;
     }
 }
@@ -661,4 +661,103 @@ section img[src*="ghchart"] {
     .publication-item::before {
         opacity: 0.6;
     }
+}
+
+
+/* ===========================================================================
+   JOB CALLOUT, NEWS, PUBLICATION VIEW TOGGLE, SELECTED BADGE, EARLIER WORK
+   =========================================================================== */
+.job-callout {
+    margin: 1.1rem 0 0.4rem;
+    padding: 0.8rem 1rem;
+    background: var(--accent-50);
+    border: 1px solid var(--accent-200);
+    border-left: 3px solid var(--accent);
+    border-radius: var(--radius-sm);
+}
+.job-callout strong {
+    color: var(--accent-ink);
+}
+.job-callout a {
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.news-list {
+    list-style: none;
+    padding-left: 0;
+    margin: 0.6rem 0 0;
+}
+.news-list li {
+    display: flex;
+    gap: 0.8rem;
+    padding: 0.28rem 0;
+    border-bottom: 1px solid var(--line-soft);
+}
+.news-list li:last-child {
+    border-bottom: 0;
+}
+.news-text {
+    flex: 1 1 auto;
+    min-width: 0;
+}
+.news-date {
+    flex: 0 0 4.2rem;
+    color: var(--muted);
+    font-variant-numeric: tabular-nums;
+    font-size: 0.88rem;
+    padding-top: 0.05rem;
+}
+
+.pub-filter {
+    display: inline-flex;
+    gap: 0.4rem;
+    margin: 0.4rem 0 0.2rem;
+}
+.pub-filter button {
+    font: inherit;
+    font-size: 0.82rem;
+    font-weight: 600;
+    padding: 0.25rem 0.85rem;
+    border-radius: 999px;
+    border: 1px solid var(--accent-200);
+    background: var(--surface);
+    color: var(--accent-strong);
+    cursor: pointer;
+    transition: background 0.16s ease, color 0.16s ease, border-color 0.16s ease;
+}
+.pub-filter button[aria-pressed="true"] {
+    background: var(--accent-strong);
+    border-color: var(--accent-strong);
+    color: #fff;
+}
+.pub-filter button:hover {
+    border-color: var(--accent);
+}
+.pub-filter button:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+}
+
+.pub-badge {
+    display: inline-block;
+    margin: 0 0 0.35rem;
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--accent-ink);
+    background: var(--accent-100);
+    border-radius: 999px;
+    padding: 0.08rem 0.55rem;
+}
+
+.pub-earlier {
+    margin-top: 1rem;
+}
+.pub-earlier > summary {
+    cursor: pointer;
+    font-weight: 600;
+    color: var(--accent-strong);
+    padding: 0.4rem 0;
 }

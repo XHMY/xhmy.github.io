@@ -30,6 +30,8 @@
     note: "note",
     year: "year",
     url: "url",
+    selected: "selected",
+    section: "section",
   };
 
   // --- Inline markdown helpers -------------------------------------------
@@ -124,7 +126,7 @@
       var t = titleRe.exec(line);
       if (t) {
         flush();
-        current = { title: t[1].trim(), authors: "", venue: "", info: [], links: [], note: "", year: "", url: "" };
+        current = { title: t[1].trim(), authors: "", venue: "", info: [], links: [], note: "", year: "", url: "", selected: false, section: "" };
         continue;
       }
       if (!current) continue;
@@ -139,6 +141,10 @@
         current.info = current.info.concat(
           val.split(/\s*\|\s*/).map(function (s) { return s.trim(); }).filter(Boolean)
         );
+      } else if (key === "selected") {
+        current.selected = /^(yes|true|y|1)$/i.test(val);
+      } else if (key === "section") {
+        current.section = val.toLowerCase();
       } else {
         current[key] = val;
       }
@@ -164,9 +170,10 @@
 
   // --- Rendering (matches the site's existing .publication-item markup) --
 
-  function renderEntry(e, idx) {
+  function renderEntry(e, idx, showBadge) {
     var parts = [];
-    parts.push('<div class="publication-item" style="--pi:' + (idx || 0) + '">');
+    parts.push('<div class="publication-item' + (e.selected ? " is-selected" : "") +
+      '" style="--pi:' + (idx || 0) + '">');
     var titleInner = renderInline(e.title);
     var url = primaryUrl(e);
     if (url) {
@@ -175,6 +182,7 @@
         '" target="_blank" rel="noopener">' + titleInner + "</a>";
     }
     parts.push('<h3 class="publication-title">' + titleInner + "</h3>");
+    if (e.selected && showBadge) parts.push('<span class="pub-badge">Selected</span>');
     if (e.authors) parts.push('<div class="publication-authors">' + renderInline(e.authors, "highlighted-author") + "</div>");
 
     var pieces = [];
@@ -254,7 +262,7 @@
     return groups;
   }
 
-  function renderTimeline(entries) {
+  function renderTimeline(entries, showBadge) {
     var groups = groupByYear(entries);
     var gi = 0; // global index -> drives the staggered fade-in across the list
     var out = '<div class="publications-container pub-timeline">';
@@ -265,7 +273,7 @@
       out += "</div>";
       out += '<div class="pub-year-items">';
       g.items.forEach(function (e) {
-        out += renderEntry(e, gi++);
+        out += renderEntry(e, gi++, showBadge);
       });
       out += "</div></div>";
     });
@@ -273,13 +281,54 @@
     return out;
   }
 
+  // Two views: "Selected" (default; papers with `Selected: yes`) and "All"
+  // (every main paper, plus a collapsed "Earlier work" block for papers with
+  // `Section: earlier`). Falls back to All when nothing is marked Selected.
   function renderInto(container, markdown) {
     var entries = parsePublications(markdown);
     if (!entries.length) {
       container.innerHTML = '<p class="publications-empty">No publications found.</p>';
       return 0;
     }
-    container.innerHTML = renderTimeline(entries);
+    var main = entries.filter(function (e) { return e.section !== "earlier"; });
+    var earlier = entries.filter(function (e) { return e.section === "earlier"; });
+    var selected = main.filter(function (e) { return e.selected; });
+    var hasSelected = selected.length > 0;
+
+    function draw(view) {
+      var html = "";
+      if (hasSelected) {
+        html +=
+          '<div class="pub-filter" role="group" aria-label="Publication view">' +
+          '<button type="button" data-view="selected" aria-pressed="' + (view === "selected") + '">Selected (' + selected.length + ")</button>" +
+          '<button type="button" data-view="all" aria-pressed="' + (view === "all") + '">All (' + entries.length + ")</button>" +
+          "</div>";
+      }
+      if (view === "selected") {
+        html += renderTimeline(selected);
+      } else {
+        html += renderTimeline(main, true);
+        if (earlier.length) {
+          html +=
+            '<details class="pub-earlier"><summary>Earlier work: computer vision &amp; AI4Science (' +
+            earlier.length + ")</summary>" + renderTimeline(earlier) + "</details>";
+        }
+      }
+      container.innerHTML = html;
+      var btns = container.querySelectorAll(".pub-filter button");
+      for (var i = 0; i < btns.length; i++) {
+        btns[i].addEventListener("click", function () {
+          var v = this.getAttribute("data-view");
+          if (v !== view) {
+            draw(v);
+            var b = container.querySelector('.pub-filter button[data-view="' + v + '"]');
+            if (b) b.focus();
+          }
+        });
+      }
+    }
+
+    draw(hasSelected ? "selected" : "all");
     container.classList.add("is-ready");
     return entries.length;
   }
