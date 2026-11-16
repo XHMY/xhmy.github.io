@@ -88,7 +88,7 @@
 - URL: https://aclanthology.org/2025.findings-emnlp.1034/
 
 ## TreeBoN: Enhancing Inference-Time Alignment with Speculative Tree-Search and Best-of-N Sampling
-- Authors: Jiahao Qiu✧, Yifu Lu✧, **Yifan Zeng**, Jiacheng Guo, Jiayi Geng, Huazheng Wang, Kaixuan Huang, Yue Wu, Mengdi Wang
+- Authors: Jiahao Qiu✧, Yifu Lu✧, **Yifan Zeng**, Jiacheng Guo, Jiayi Geng, Chenhao Zhu, Xinzhe Juan, Ling Yang, Huazheng Wang, Kaixuan Huang, Yue Wu, Mengdi Wang
 - Venue: EMNLP 2025
 - Info: arXiv:2410.16033
 - Year: 2024
@@ -112,7 +112,7 @@
 - Links: [Code](https://github.com/blindspotorg/RankingBlindSpot)
 
 ## LLM-RankFusion: Mitigating Intrinsic Inconsistency in LLM-based Ranking
-- Authors: **Yifan Zeng**✧, Ojas Tendolkar✧, Raymond Baartmans✧, Qingyun Wu, Huazheng Wang, Lizhong Chen
+- Authors: **Yifan Zeng**✧, Ojas Tendolkar✧, Raymond Baartmans✧, Qingyun Wu, Lizhong Chen, Huazheng Wang
 - Venue: Transactions on Machine Learning Research ( 2835-8856 )
 - Info: arXiv:2406.00231
 - Year: 2024
